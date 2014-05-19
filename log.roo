@@ -6,3 +6,4 @@ field string --fieldName firstName --notNull --sizeMin 1
 field string --fieldName lastName
 field string --fieldName email --notNull --sizeMin 3
 repository jpa --interface ~.domain.account.PersonRepository --entity ~.domain.account.Person
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-20 00:29:03
