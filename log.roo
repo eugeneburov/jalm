@@ -1,0 +1,8 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-05-19 19:31:03
+project --topLevelPackage com.u3dom.jalm --projectName jalm --java 7 --packaging JAR
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity jpa --class com.u3dom.jalm.domain.account.Person --testAutomatically
+field string --fieldName firstName --notNull --sizeMin 1
+field string --fieldName lastName
+field string --fieldName email --notNull --sizeMin 3
+repository jpa --interface ~.domain.account.PersonRepository --entity ~.domain.account.Person
